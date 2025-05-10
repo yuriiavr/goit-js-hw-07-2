@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  max-width: 300px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.task {
+  display: none;
+}
+
+.task:target,
+.task.active {
+  display: block;
+}
