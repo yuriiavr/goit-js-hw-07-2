@@ -5,120 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-
     <nav>
-      <button data-task="task-1">Task 1</button>
-      <button data-task="task-2">Task 2</button>
-      <button data-task="task-3">Task 3</button>
-      <button data-task="task-4">Task 4</button>
-      <button data-task="task-5">Task 5</button>
-      <button data-task="task-6">Task 6</button>
+      <a href="task-1.html">Task 1</a>
+      <a href="task-2.html">Task 2</a>
+      <a href="task-3.html">Task 3</a>
+      <a href="task-4.html">Task 4</a>
+      <a href="task-5.html">Task 5</a>
+      <a href="task-6.html">Task 6</a>
     </nav>
-
-    <section class="task" id="task-1">
-      <ul id="categories">
-        <li class="item">
-          <h2>Animals</h2>
-          <ul>
-            <li>Cat</li>
-            <li>Hamster</li>
-            <li>Horse</li>
-            <li>Parrot</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Products</h2>
-          <ul>
-            <li>Bread</li>
-            <li>Parsley</li>
-            <li>Cheese</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Technologies</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section class="task" id="task-2">
-      <ul class="gallery"></ul>
-    </section>
-
-    <section class="task" id="task-3">
-      <input type="text" id="name-input" placeholder="Please enter your name" />
-      <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
-    </section>
-
-    <section class="task" id="task-4">
-      <form class="login-form">
-        <label>
-          Email
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Password
-          <input type="password" name="password" />
-        </label>
-        <button type="submit">Log in</button>
-      </form>
-    </section>
-
-    <section class="task" id="task-5">
-      <div class="widget">
-        <p>Background color: <span class="color">-</span></p>
-        <button type="button" class="change-color">Change color</button>
-      </div>
-    </section>
-
-    <section class="task" id="task-6">
-      <div id="controls">
-        <input type="number" min="1" max="100" step="1" />
-        <button type="button" data-create>Create</button>
-        <button type="button" data-destroy>Destroy</button>
-      </div>
-      <div id="boxes"></div>
-    </section>
-
-    <script>
-      console.log("task-1");
-    </script>
-    <script src="./js/task-1.js"></script>
-
-    <script src="./js/task-2.js"></script>
-
-    <script src="./js/task-3.js"></script>
-
-    <script>
-      console.log("task-4");
-    </script>
-    <script src="./js/task-4.js"></script>
-
-    <script src="./js/task-5.js"></script>
-
-    <script src="./js/task-6.js"></script>
-
-    <script>
-      const buttons = document.querySelectorAll("nav button");
-      const tasks = document.querySelectorAll(".task");
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const taskId = button.getAttribute("data-task");
-          tasks.forEach((task) => {
-            task.style.display = task.id === taskId ? "block" : "none";
-          });
-        });
-      });
-    </script>
   </body>
 </html>
